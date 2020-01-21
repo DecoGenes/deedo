@@ -1,0 +1,92 @@
+date-fns
+axios
+bootstrap
+(some graph lib) - search which one
+
+
+
+
+Would it good to be a stamp (like to be recognized as the got o place to search for creating good deeds events)
+
+
+Do Structure of the app:
+
+What the app will do?
+- keep track of good deeds
+- post available good deeds (list by searched category)
+- Acumulate points according to the kind of deed (table of level of availability of points)
+- Profile, with history of deedone (separeted by type of deed??)
+- sign in - with social networks
+- Search available deeds
+- Excahnge points for deedwards
+- deedcard
+- DeedId
+
+// what we need to attend the app purpose?
+
+Structure what will be MVP and following milestones.
+
+MVP:
+- Profile (name, e-mail, address, deedpoint????, deedid, blood type, deedone(history of deeds - deedstory), blood priority, next possible donation)
+- login (e-mail and password)
+- FAQ's
+- deedwards
+- List of deeds addresses - google maps links
+- Registration *
+
+2 milestone:
+- specific person donation (or a list of people needing specific kinds of blood) - get more points
+- Registration* - Social Network*
+- Google maps API
+- Events
+- Push notifications
+
+3 milestone:
+- Blood banks availablility (needs of blood by type)
+- Create new deeds and have different (example: animal volunteer in shelters or hosting)
+- Registration of organ donator (add to profile) - connect to adi card
+- Hair donation 
+- Plasma donation
+- umbilical cord blood(to take stem cells and other usages)
+
+4 Milestone
+- Translation to other languages
+- be available to companies to create deeds on the app
+- company registration and validation
+
+
+Which parts (components) will the app have?
+
+- main app component
+- NavBar component
+- login page
+- registration page
+- profile page
+- deedcard page
+- deedone page
+- FAQ's page
+- deedwards page
+- deedlist - list of places page
+
+Which will be the tasks?
+
+Login - 3
+Registration - 3
+Profile - 1
+deedcard (donator card) - 2
+deedone (history of deeds) - 2
+deedwards (rewards) - 1
+deedlist component (list of available deeds to do) - 1
+places to complete deeds information - 2 (should it be backend?)
+FAQ's component - 4
+FAQ's Q&A information - 4 (should it be back end?)
+NavBar - 5
+Main App Component - 5
+
+Order the task (set a relevance system)
+
+Divide tasks
+
+
+
+
