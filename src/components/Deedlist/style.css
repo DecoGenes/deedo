@@ -11,7 +11,9 @@ body{
 }
 .deedlist-deed{
     color: darkred;
+    text-decoration: underline;
 }
 .deedslist-headline{
     color: darkblue;
+    margin-top:15px;
 }

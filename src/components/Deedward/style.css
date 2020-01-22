@@ -1,0 +1,12 @@
+.rewards-page-container {
+    min-height: 50vh;
+    border: 1px solid red;
+}
+
+.reward-card{
+    margin-bottom: 15px;
+}
+
+.reward-cost {
+    font-size: 0.8rem;
+}

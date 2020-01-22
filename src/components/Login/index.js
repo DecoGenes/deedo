@@ -7,6 +7,8 @@ import DeedList from '../Deedlist';
 import Profile from '../Profile';
 import DeedDone from '../Deedone';
 import Deedcard from '../Deedcard';
+import DeedWard from "../Deedward";
+import FAQ from "../FAQ";
 import NavBarMain from '../Navbar';
 import Home from '../Home'
 // import App from '../../App'
@@ -22,7 +24,8 @@ export default class Login extends React.Component {
         signInFlow: 'popup',
         signInOptions: [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-            firebase.auth.FacebookAuthProvider.PROVIDER_ID
+            firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+            firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
         callbacks: {
             signInSuccessWithAuthResult: () => false
@@ -85,10 +88,10 @@ export default class Login extends React.Component {
                                 <Deedcard></Deedcard>
                             </Route>
                             <Route path="/DeedWard">
-                                <Deedcard></Deedcard>
+                                <DeedWard></DeedWard>
                             </Route>
-                            <Route path="/DeedCard">
-                                <Deedcard></Deedcard>
+                            <Route path="/FAQ">
+                                <FAQ></FAQ>
                             </Route>
                         </div>
                     </Switch>

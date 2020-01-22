@@ -21,7 +21,7 @@
     margin: 15px;
     max-width: 300px;
     min-width:160px;
-    height:108px;
+    height: 100px;
     justify-content: center;
 }
 .deedlist-deed{
@@ -32,7 +32,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: content-box !important;
 }
 .profile-headline{
     color:darkblue;
+    margin-top:15px;
 }
+
+* {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  *:before,
+  *:after {
+    -webkit-box-sizing: content-box;
+       -moz-box-sizing: content-box;
+            box-sizing: content-box;
+  }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles.css';
-import qrcode from '../../images/qrcode.png'
+
 
 
 const userData = {
@@ -14,13 +14,11 @@ const userData = {
 }
 
 
-const Deedcard = () => {
-
-
-
+const DeedCard = () => {
+    
     return (
         <div className="deedcard-container">
-            <div className="deedcard card">
+            <div className="deedcard-card">
                 <div className="deedcard-header title">
                     <h1>DeedCard</h1>
                 </div>
@@ -55,5 +53,5 @@ const Deedcard = () => {
 
 }
 
-export default Deedcard;
+export default DeedCard;
 
