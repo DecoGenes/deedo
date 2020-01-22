@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -7,6 +7,10 @@ import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
 import Deedcard from './components/Deedcard';
 import NavBarMain from './components/Navbar';
+import Home from './components/Home'
+import Login from "./components/Login";
+import firebase from './firebase'
+
 
 
 function App() {
@@ -16,8 +20,13 @@ function App() {
         <div className="App">
           <NavBarMain></NavBarMain>
           <Route exact path= "/">
+            <Home />
             <h1> testing</h1>
+            <Login />
           </Route>
+          {/* <Route exact path= "/login">
+            <Login />
+          </Route> */}
           <Route path= "/DeedList">
             <DeedList></DeedList>
           </Route>
