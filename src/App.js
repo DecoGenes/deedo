@@ -18,7 +18,7 @@ function App() {
           <Route path= "/DeedList">
             <DeedList></DeedList>
           </Route>
-          <Route path="/Profile">
+          <Route path="/profile">
             <Profile></Profile>
           </Route>
           <Route path= "/DeedDone">
