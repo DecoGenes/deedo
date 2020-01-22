@@ -47,41 +47,42 @@ export default function Profile() {
 
     return (
         <div className='profile-page'>
-            <h1>DeedId: {deedId}</h1>
+            <h1 className="profile-headline">DeedId: {deedId}</h1>
+            <div>Next Deed Date: {nextAvailableDeedDate}</div>
             <div className='user-card'>
-                <div className='card'>
+                <div className='card1'>
                     <div>First Name: {firstName}</div>
                     <div>Last Name: {lastName}</div>
                     <div>Birth Date: {birthDate}</div>
                     <div>Deed Balance: {deedBalance}</div>
                 </div>
-                <div className='card'> Address:
+                <div className='card1'> Address:
                     <div>{address.address1}</div>
                     <div>{address.address2}</div>
                     <div>{address.city}</div>
                     <div>{address.country}</div>
                     <div>{address.zip}</div>
                 </div>
-                <div className='card'> Blood:
+                <div className='card1'> Blood:
                 <span>Blood Type: {blood.bloodType}</span>
                     <span>RhD: {blood.RhD}</span>
                     <label>Plasma Donor:
                 <input type='checkbox' onChange={(event) => handlePlasmaDonor(event)} value={blood.plasmaDonor} />
                     </label>
-                </div>
-                <label>Organ Donor:
+                    <label>Organ Donor:
                 <input type='checkbox' onChange={(event) => handleOrganDonor(event)} value={organDonor} />
                 </label>
-                <div className='card'>
+                </div>
+                <div className='card1'>
                     <div>Category: {category}</div>
                     <div>{deedDone.category}</div>
                     <div>Deed Date: {deedDone.deedDate}</div>
                     <div>Points: {deedDone.pointsPerDeed}</div>
                     <div>Deed Type: {deedDone.typeOfDeed}</div>
                 </div>
-                <div>Next Deed Date: {nextAvailableDeedDate}</div>
                 
-                <div className='card'> DeedWards
+                
+                <div className='card1'> DeedWards
                 <div>Date: {deedWards.deedWardDate}</div>
                     <div>DeedWard Retrieved: {deedWards.deedWardRetrieved}</div>
                     <div>Points Used: {deedWards.deedWardPointUsed}</div>
