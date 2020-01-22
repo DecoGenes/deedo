@@ -3,7 +3,11 @@
 }
 .navbar-links{
     text-align: center;
+    justify-content: center;
 }
 .navbar-div{
     margin-bottom: 20px;
+}
+.navbar-logo{
+    height:40px;
 }

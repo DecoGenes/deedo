@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./style.css"
 
 
@@ -63,14 +63,14 @@ const rewards = [
 ]
 
 
-
-
-
 const DeedWard = () => {
+    const [points, setPoints] = useState('400')
 
     return (
         <div className="rewards-page-container">
-            <div className="total-pts">Total Available Points: 500</div>
+            <div className="total-pts">
+                <h2>Available Points: {points}</h2>
+            </div>
 
             <div class="row justify-content-center">
                 {rewards.map(reward =>
