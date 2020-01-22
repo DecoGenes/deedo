@@ -3,7 +3,6 @@ import "./style.css";
 
 export default function Profile() {
 
-
     const [deedId, setDeedId] = useState('yahenpodsandakp')
     const [firstName, setFirstName] = useState('Andre')
     const [lastName, setLastName] = useState('Genes')
