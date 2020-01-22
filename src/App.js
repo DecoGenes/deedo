@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from 'react';
+import React, { useState} from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
@@ -28,8 +28,6 @@ function App() {
           <NavBarMain></NavBarMain>
           <Route exact path= "/">
             <Home />
-            <h1> testing</h1>
-            <Login onChange />
           </Route>
           {/* <Route exact path= "/login">
             <Login />
@@ -44,7 +42,10 @@ function App() {
             <DeedDone></DeedDone>
           </Route>
           <Route path="/DeedCard">
-            <Deedcard></Deedcard>
+            <DeedCard></DeedCard>
+          </Route>
+          <Route path="/DeedWard">
+            <DeedWard></DeedWard>
           </Route>
         </div>
       </Switch>   

@@ -15,7 +15,8 @@ export default class Login extends React.Component {
         signInFlow: 'popup',
         signInOptions: [
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-            firebase.auth.FacebookAuthProvider.PROVIDER_ID
+            firebase.auth.FacebookAuthProvider.PROVIDER_ID,
+            firebase.auth.EmailAuthProvider.PROVIDER_ID
         ],
         callbacks: {
             signInSuccessWithAuthResult: () => false
@@ -42,7 +43,6 @@ export default class Login extends React.Component {
             return (
                 <Route exact path='/'>
                     <div className='signInPage'>
-                        <h1>DeeDo</h1>
                         <p>Please sign-in:</p>
                         <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
                     </div>
