@@ -11,7 +11,9 @@ function App() {
     <Router>
       <Switch>
         <div className="App">
-          <h1> testing</h1>
+          <Route exact path="/">
+            <h1> testing</h1>
+          </Route>
           <Route path="/DeedList">
             <DeedList></DeedList>
           </Route>
