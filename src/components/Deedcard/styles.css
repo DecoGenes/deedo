@@ -1,5 +1,4 @@
 .deedcard-container {
-    border: 1px solid red;
     padding: 10%;
 }
 
@@ -11,6 +10,7 @@
     margin: auto;
     border-radius: 40px;
     padding: 1% 3%;
+    background-color: #fafafa;
 }
 .deedcard-header {
     margin-top: 0;
@@ -18,13 +18,13 @@
 
 .deedcard-header.title {
     text-align: center;
+    margin-bottom: 0.85rem;
 }
 .deedcard-user.info {
     display: flex;
 }
 
 .deedcard-user {
-    /* border: 1px solid orange; */
     flex-shrink: 0;
 }
 
@@ -37,6 +37,9 @@
     margin: auto;
 }
 
+.deedcard-detail {
+    margin-bottom: 0.4rem;
+}
 .qrcode {
     display: inline-block;
     width: 100%;
@@ -44,8 +47,9 @@
     background-image: url('http://www.pngall.com/wp-content/uploads/2/QR-Code-PNG-Picture.png');
     background-size: contain;
 }
-
-
 .space-info {
     margin-inline-start: 5px;
+}
+.total-pts {
+    margin: 2rem auto;
 }
