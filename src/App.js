@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useEffect} from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
 import DeedList from './components/Deedlist/index';
 import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
 import Deedcard from './components/Deedcard';
-import SignInScreen from "./components/Login";
+import Login from "./components/Login";
+import firebase from './firebase'
+
 
 
 function App() {
@@ -15,10 +17,11 @@ function App() {
         <div className="App">
           <Route exact path= "/">
             <h1> testing</h1>
+            <Login />
           </Route>
-          <Route exact path= "/login">
-            <SignInScreen />
-          </Route>
+          {/* <Route exact path= "/login">
+            <Login />
+          </Route> */}
           <Route path= "/DeedList">
             <DeedList></DeedList>
           </Route>

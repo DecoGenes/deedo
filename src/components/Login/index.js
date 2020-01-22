@@ -1,10 +1,11 @@
 import React from 'react';
+import './style.css'
 import StyledFirebaseAuth from 'react-firebaseui/StyledFirebaseAuth';
 import { Redirect, Route } from "react-router-dom";
-import firebase from '';
+import firebase from 'firebase';
 
 
-export default class SignInScreen extends React.Component {
+export default class Login extends React.Component {
     state = {
         isSignedIn: false,
         redirect: false
@@ -13,9 +14,8 @@ export default class SignInScreen extends React.Component {
     uiConfig = {
         signInFlow: 'popup',
         signInOptions: [
-            firebase.auth.EmailAuthProvider.PROVIDER_ID,
             firebase.auth.GoogleAuthProvider.PROVIDER_ID,
-            firebase.auth.FacebookAuthProvider.PROVIDER_ID
+            // firebase.auth.FacebookAuthProvider.PROVIDER_ID
         ],
         callbacks: {
             signInSuccessWithAuthResult: () => false
@@ -42,7 +42,7 @@ export default class SignInScreen extends React.Component {
             return (
                 <Route exact path='/'>
                     <div className='signInPage'>
-                        <h1>My App</h1>
+                        <h1>DeeDo</h1>
                         <p>Please sign-in:</p>
                         <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
                     </div>
