@@ -3,6 +3,7 @@ import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 import './App.css';
 import DeedList from './components/Deedlist/index'
 import Profile from './components/Profile';
+import DeedDone from './components/Deedone/index';
 
 function App() {
   return (
@@ -16,8 +17,11 @@ function App() {
       <DeedList></DeedList>
     </Route>
     <Route path="/Profile">
-            <Profile></Profile>
-          </Route>
+      <Profile></Profile>
+    </Route>
+    <Route path= "/DeedDone">
+      <DeedDone></DeedDone>
+    </Route>
     </div>
     </Switch>   
     </Router>
