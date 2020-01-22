@@ -5,7 +5,8 @@ import './App.css';
 import DeedList from './components/Deedlist/index';
 import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
-import Deedcard from './components/Deedcard';
+import DeedCard from './components/Deedcard';
+import DeedWard from './components/Deedward';
 import NavBarMain from './components/Navbar';
 import Home from './components/Home'
 import Login from "./components/Login";
@@ -44,7 +45,7 @@ function App() {
           <Route path="/DeedCard">
             <DeedCard></DeedCard>
           </Route>
-          <Route path="/DeedWard">
+          <Route path="/DeedWards">
             <DeedWard></DeedWard>
           </Route>
         </div>
