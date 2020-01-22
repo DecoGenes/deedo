@@ -11,6 +11,7 @@ import DeedWard from './components/Deedward/index'
 import Home from './components/Home'
 import Login from "./components/Login";
 import firebase from './firebase'
+import FAQ from './components/FAQ/index'
 
 
 
@@ -47,6 +48,9 @@ function App() {
           </Route>
           <Route path="/DeedWard">
             <DeedWard></DeedWard>
+          </Route>
+          <Route path="/FAQ">
+            <FAQ></FAQ>
           </Route>
         </div>
       </Switch>   

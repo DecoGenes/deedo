@@ -15,6 +15,7 @@ export default function NavBarMain() {
                 <Nav.Link><Link to={'/Deedwards'}>Deedwards</Link></Nav.Link>
                 <Nav.Link> <Link to={'/Deeddone'}>Deeds Done</Link></Nav.Link>
                 <Nav.Link> <Link to={'/Deedcard'}>Deeds Card</Link></Nav.Link>
+                <Nav.Link> <Link to={'/Deedcard'}>FAQ's</Link></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>
