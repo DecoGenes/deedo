@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default function NavBarMain() {
     return (
-        <div className="Main-navbar">
+        <div className="navbar-div">
             <Navbar bg="light" expand="lg" className="Main-navbar" >
             <Navbar.Brand href="#home">Deedo</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
