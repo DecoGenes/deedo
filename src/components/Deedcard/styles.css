@@ -1,5 +1,4 @@
 .deedcard-container {
-    border: 1px solid red;
     padding: 10%;
 }
 
@@ -24,7 +23,6 @@
 }
 
 .deedcard-user {
-    /* border: 1px solid orange; */
     flex-shrink: 0;
 }
 
