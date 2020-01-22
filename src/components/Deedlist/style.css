@@ -7,7 +7,11 @@ body{
     border-radius: 20px;
     padding:15px;
     margin:15px;
+    min-width:300px;
 }
 .deedlist-deed{
     color: darkred;
+}
+.deedslist-headline{
+    color: darkblue;
 }

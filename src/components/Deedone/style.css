@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+.deedsdone-card{
+    display: inline-block;
+    border: 2px SteelBlue solid;
+    border-radius: 20px;
+    padding:15px;
+    margin:15px;
+    min-width:300px;
+}
+.deedsdone-headline{
+    color: darkblue;
+}
+.deedsdone-date{
+    text-align: right;
+    margin-bottom: 32px;
+    margin-top: 0;
+}
