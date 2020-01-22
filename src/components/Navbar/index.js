@@ -14,7 +14,7 @@ export default function NavBarMain() {
                 <Nav className="mr-auto navbar-links">
                 <Nav.Link> <Link to={'/profile'}>Profile</Link></Nav.Link>
                 <Nav.Link> <Link to={'/DeedList'}> Deed List</Link></Nav.Link>
-                <Nav.Link><Link to={'/Deedward'}>Deedwards</Link></Nav.Link>
+                <Nav.Link><Link to={'/Deedward'}>Deedward</Link></Nav.Link>
                 <Nav.Link> <Link to={'/Deeddone'}>Deeds Done</Link></Nav.Link>
                 <Nav.Link> <Link to={'/Deedcard'}>Deeds Card</Link></Nav.Link>
                 <Nav.Link> <Link to={'/faq'}>FAQ's</Link></Nav.Link>
