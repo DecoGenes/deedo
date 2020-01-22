@@ -36,6 +36,30 @@ const rewards = [
         cost: "min. 40 pts.",
         mapURL: "https://goo.gl/maps/ZjK7EeqXhC6opUK37"
     },
+    {
+        storeName: "Caldo",
+        location: "Derech Metsada 47, Be'er Sheva",
+        city: "Beer Sheva",
+        storeDescription: "Gourmet pizza bar",
+        cost: "min. 30 pts.",
+        mapURL: "https://goo.gl/maps/6GgYRkK6eRK7jyvd8"
+    },
+    {
+        storeName: "Goomba",
+        location: "Yes Planet Unit 2, Be'er Sheva",
+        city: "Beer Sheva",
+        storeDescription: "Authentic Italian restaurant",
+        cost: "min. 30 pts.",
+        mapURL: "https://goo.gl/maps/ZRkvoY2JfWioJwuW6"
+    },
+    {
+        storeName: "Sifriya",
+        location: "Yitshak Nafha St 25, Be'er Sheva",
+        city: "Beer Sheva",
+        storeDescription: "Awesome family restaurant",
+        cost: "min. 50 pts.",
+        mapURL: "https://goo.gl/maps/xEedyhiePqbENBdh9"
+    },
 ]
 
 
@@ -48,109 +72,20 @@ const DeedWard = () => {
         <div className="rewards-page-container">
             <div className="total-pts">Total Available Points: 500</div>
 
-            <div class="row">
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[0].storeName}</h5>
-                            <p class="card-text">{rewards[0].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[0].cost}</p>
-                            <a href={rewards[0].mapURL} class="btn btn-primary" target="_blank">See map</a>
+            <div class="row justify-content-center">
+                {rewards.map(reward =>
+                    <div className="col-sm-3 reward-card">
+                        <div className="card">
+                            <div className="card-body">
+                                <h5 className="card-title">{reward.storeName}</h5>
+                                <p className="card-text">{reward.storeDescription}</p>
+                                <p className="card-text reward-cost">{reward.cost}</p>
+                                <p className="reward-location"><em>{reward.location}</em></p>
+                                <a href={reward.mapURL} className="btn btn-primary" target="_blank">See map</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[1].storeName}</h5>
-                            <p class="card-text">{rewards[1].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[1].cost}</p>
-                            <a href={rewards[1].mapURL} class="btn btn-primary">See map</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[2].storeName}</h5>
-                            <p class="card-text">{rewards[2].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[2].cost}</p>
-                            <a href={rewards[2].mapURL} class="btn btn-primary">See map</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[0].storeName}</h5>
-                            <p class="card-text">{rewards[0].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[0].cost}</p>
-                            <a href={rewards[0].mapURL} class="btn btn-primary" target="_blank">See map</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[1].storeName}</h5>
-                            <p class="card-text">{rewards[1].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[1].cost}</p>
-                            <a href={rewards[1].mapURL} class="btn btn-primary">See map</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[2].storeName}</h5>
-                            <p class="card-text">{rewards[2].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[2].cost}</p>
-                            <a href={rewards[2].mapURL} class="btn btn-primary">See map</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[0].storeName}</h5>
-                            <p class="card-text">{rewards[0].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[0].cost}</p>
-                            <a href={rewards[0].mapURL} class="btn btn-primary" target="_blank">See map</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[1].storeName}</h5>
-                            <p class="card-text">{rewards[1].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[1].cost}</p>
-                            <a href={rewards[1].mapURL} class="btn btn-primary">See map</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-3 reward-card">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">{rewards[2].storeName}</h5>
-                            <p class="card-text">{rewards[2].storeDescription}</p>
-                            <p class="card-text reward-cost">{rewards[2].cost}</p>
-                            <a href={rewards[2].mapURL} class="btn btn-primary">See map</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-            <div>
-                <p>Location</p>
-            </div>
-            <div className='rewards-list-container'>
-
+                )}
             </div>
         </div>
     )

@@ -1,6 +1,5 @@
 .rewards-page-container {
     min-height: 50vh;
-    border: 1px solid red;
 }
 
 .reward-card{
@@ -9,4 +8,8 @@
 
 .reward-cost {
     font-size: 0.8rem;
+}
+
+.reward-location {
+    font-size: 0.9rem;
 }
