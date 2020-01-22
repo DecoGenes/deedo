@@ -21,8 +21,6 @@ function App() {
           <NavBarMain></NavBarMain>
           <Route exact path= "/">
             <Home />
-            <h1> testing</h1>
-            <Login />
           </Route>
           {/* <Route exact path= "/login">
             <Login />
