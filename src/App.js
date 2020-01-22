@@ -4,7 +4,8 @@ import './App.css';
 import DeedList from './components/Deedlist/index';
 import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
-import Deedcard from './components/Deedcard';
+import DeedCard from './components/Deedcard';
+import DeedWard from './components/Deedward';
 
 
 function App() {
@@ -25,7 +26,10 @@ function App() {
             <DeedDone></DeedDone>
           </Route>
           <Route path="/DeedCard">
-            <Deedcard></Deedcard>
+            <DeedCard></DeedCard>
+          </Route>
+          <Route path="/DeedWard">
+            <DeedWard></DeedWard>
           </Route>
         </div>
       </Switch>   
