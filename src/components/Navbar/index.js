@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default function NavBarMain() {
     return (
-        <div className="Main-navbar">
+        <div className="navbar-div">
             <Navbar bg="light" expand="lg" className="Main-navbar" >
             <Navbar.Brand href="#home">Deedo</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -15,6 +15,7 @@ export default function NavBarMain() {
                 <Nav.Link><Link to={'/Deedwards'}>Deedwards</Link></Nav.Link>
                 <Nav.Link> <Link to={'/Deeddone'}>Deeds Done</Link></Nav.Link>
                 <Nav.Link> <Link to={'/Deedcard'}>Deeds Card</Link></Nav.Link>
+                <Nav.Link> <Link to={'/Deedcard'}>FAQ's</Link></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
             </Navbar>

@@ -7,10 +7,13 @@ import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
 import DeedCard from './components/Deedcard';
 import DeedWard from './components/Deedward';
+import DeedCard from './components/Deedcard/index';
 import NavBarMain from './components/Navbar';
+import DeedWard from './components/Deedward/index'
 import Home from './components/Home'
 import Login from "./components/Login";
 import firebase from './firebase'
+import FAQ from './components/FAQ/index'
 
 
 
@@ -47,6 +50,9 @@ function App() {
           </Route>
           <Route path="/DeedWards">
             <DeedWard></DeedWard>
+          </Route>
+          <Route path="/FAQ">
+            <FAQ></FAQ>
           </Route>
         </div>
       </Switch>   

@@ -11,6 +11,7 @@ body{
 }
 .deedsdone-headline{
     color: darkblue;
+    margin-top:15px;
 }
 .deedsdone-date{
     text-align: right;
