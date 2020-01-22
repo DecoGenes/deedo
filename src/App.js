@@ -5,6 +5,7 @@ import DeedList from './components/Deedlist/index';
 import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
 import Deedcard from './components/Deedcard';
+import SignInScreen from "./components/Login";
 
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
         <div className="App">
           <Route exact path= "/">
             <h1> testing</h1>
+          </Route>
+          <Route exact path= "/login">
+            <SignInScreen />
           </Route>
           <Route path= "/DeedList">
             <DeedList></DeedList>
