@@ -1,8 +1,10 @@
 import React from 'react';
-import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
+import { Route, Switch, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import DeedList from './components/Deedlist/index'
+import DeedList from './components/Deedlist/index';
 import Profile from './components/Profile';
+import Deedcard from './components/Deedcard';
+
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
           </Route>
           <Route path="/Profile">
             <Profile></Profile>
+          </Route>
+          <Route path="/DeedCard">
+            <Deedcard></Deedcard>
           </Route>
         </div>
       </Switch>
