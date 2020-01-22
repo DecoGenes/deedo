@@ -12,6 +12,8 @@ import FAQ from "../FAQ";
 import NavBarMain from '../Navbar';
 import Home from '../Home'
 // import App from '../../App'
+import { Container, Col, Card, ListGroup, ListGroupItem, ButtonToolbar, Button, Row } from 'react-bootstrap';
+import logo from  './logo.jpeg'
 
 
 export default class Login extends React.Component {
@@ -52,11 +54,29 @@ export default class Login extends React.Component {
                 <Router>
                     <Switch>
                         <Route exact path='/'>
-                            <div className='signInPage'>
-                                <h1>DeeDo</h1>
-                                <p>Please sign-in:</p>
-                                <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
-                            </div>
+                            <Container className="align-items-center" >
+                                <Row className="align-items-center">
+                                    <Card className="col-12" >
+                                        <Card.Img variant="top" src={logo}  />
+                                        <Card.Body>
+                                            <Card.Title>Deedo</Card.Title>
+                                            <Card.Text>
+                                                Some quick example text to build on the card title and make up the bulk of
+                                                the card's content.
+                                            </Card.Text>
+                                        </Card.Body>
+                                        <ListGroup className="list-group-flush">
+                                            <div className='signInPage'>
+                                                <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
+                                            </div>
+                                        </ListGroup>
+                                        <Card.Body>
+                                            <Card.Link href="#">Sponsor</Card.Link>
+                                            <Card.Link href="#">Rate Us</Card.Link>
+                                        </Card.Body>
+                                    </Card>
+                                </Row>
+                            </Container>
                         </Route>
                     </Switch>
                 </Router>
@@ -67,9 +87,9 @@ export default class Login extends React.Component {
                 <Router>
                     <Switch>
                         <div className="App">
-                        <NavBarMain />
+                            <NavBarMain />
                             <Route exact path="/">
-                                
+
                             </Route>
                             <Route exact path="/home">
                                 <Home />
