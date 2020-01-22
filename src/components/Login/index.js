@@ -55,11 +55,10 @@ export default class Login extends React.Component {
                     <Switch>
                         <Route exact path='/'>
                             <Container className="align-items-center" >
-                                <Row className="align-items-center">
-                                    <Card className="col-12" >
-                                        <Card.Img variant="top" src={logo}  />
+                                <Row className="align-items-center justify-self-center">
+                                    <Card className="col-12 home-container" >
+                                        <Card.Img variant="top" className='logo-img' src={logo}  />
                                         <Card.Body>
-                                            <Card.Title>Deedo</Card.Title>
                                             <Card.Text>
                                                 Some quick example text to build on the card title and make up the bulk of
                                                 the card's content.
@@ -106,7 +105,7 @@ export default class Login extends React.Component {
                             <Route path="/DeedCard">
                                 <Deedcard></Deedcard>
                             </Route>
-                            <Route path="/DeedWard">
+                            <Route path="/DeedWards">
                                 <DeedWard></DeedWard>
                             </Route>
                             <Route path="/FAQ">

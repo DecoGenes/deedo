@@ -3,3 +3,16 @@
     top: 2%;
     left: 92%;
 }
+
+.logo-img{
+    width: 25%;
+    object-fit: contain;
+    align-self: center;
+}
+
+.home-container{
+    margin-top: 10%;
+    max-width: 75%;
+    margin-left: 10%;
+    border-radius: 15%;
+}
