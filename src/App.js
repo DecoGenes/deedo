@@ -12,6 +12,13 @@ import firebase from './firebase'
 
 
 function App() {
+
+  const [login, setLogin] = useState(false)
+
+  function handleLogIn(){
+    setLogin(true)
+  }
+
   return (
     <Router>
       <Switch>
@@ -19,7 +26,7 @@ function App() {
           <Route exact path= "/">
             <Home />
             <h1> testing</h1>
-            <Login />
+            <Login onChange />
           </Route>
           {/* <Route exact path= "/login">
             <Login />
