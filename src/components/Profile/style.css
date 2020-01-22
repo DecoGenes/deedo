@@ -1,0 +1,31 @@
+.user-card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    border: 2px SteelBlue solid;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    max-width: 450px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border: 2px SteelBlue solid;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    max-width: 300px;
+}
+.deedlist-deed{
+    color: darkred;
+}
+
+.profile-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
