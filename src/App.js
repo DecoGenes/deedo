@@ -5,6 +5,7 @@ import DeedList from './components/Deedlist/index';
 import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
 import Deedcard from './components/Deedcard';
+import Home from './components/Home'
 import Login from "./components/Login";
 import firebase from './firebase'
 
@@ -16,6 +17,7 @@ function App() {
       <Switch>
         <div className="App">
           <Route exact path= "/">
+            <Home />
             <h1> testing</h1>
             <Login />
           </Route>
