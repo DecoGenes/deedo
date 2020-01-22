@@ -14,6 +14,13 @@ import firebase from './firebase'
 
 
 function App() {
+
+  const [login, setLogin] = useState(false)
+
+  function handleLogIn(){
+    setLogin(true)
+  }
+
   return (
     <Router>
       <Switch>
