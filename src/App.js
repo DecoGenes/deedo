@@ -7,17 +7,19 @@ import Profile from './components/Profile';
 function App() {
   return (
     <Router>
-      <Switch>
-        <div className="App">
-          <h1> testing</h1>
-          <Route path="/DeedList">
-            <DeedList></DeedList>
-          </Route>
-          <Route path="/Profile">
+    <Switch>
+    <div className="App">
+      <Route exact path= "/">
+      <h1> testing</h1>
+    </Route>
+    <Route path= "/DeedList">
+      <DeedList></DeedList>
+    </Route>
+    <Route path="/Profile">
             <Profile></Profile>
           </Route>
-        </div>
-      </Switch>
+    </div>
+    </Switch>   
     </Router>
   );
 }
