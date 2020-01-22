@@ -5,8 +5,6 @@ import './App.css';
 import DeedList from './components/Deedlist/index';
 import Profile from './components/Profile';
 import DeedDone from './components/Deedone/index';
-import DeedCard from './components/Deedcard';
-import DeedWard from './components/Deedward';
 import DeedCard from './components/Deedcard/index';
 import NavBarMain from './components/Navbar';
 import DeedWard from './components/Deedward/index'
