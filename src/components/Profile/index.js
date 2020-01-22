@@ -47,7 +47,8 @@ export default function Profile() {
 
     return (
         <div className='profile-page'>
-            <h1>DeedId: {deedId}</h1>
+            <h1 className="profile-headline">DeedId: {deedId}</h1>
+            <div>Next Deed Date: {nextAvailableDeedDate}</div>
             <div className='user-card'>
                 <div className='card'>
                     <div>First Name: {firstName}</div>
@@ -68,10 +69,10 @@ export default function Profile() {
                     <label>Plasma Donor:
                 <input type='checkbox' onChange={(event) => handlePlasmaDonor(event)} value={blood.plasmaDonor} />
                     </label>
-                </div>
-                <label>Organ Donor:
+                    <label>Organ Donor:
                 <input type='checkbox' onChange={(event) => handleOrganDonor(event)} value={organDonor} />
                 </label>
+                </div>
                 <div className='card'>
                     <div>Category: {category}</div>
                     <div>{deedDone.category}</div>
@@ -79,7 +80,7 @@ export default function Profile() {
                     <div>Points: {deedDone.pointsPerDeed}</div>
                     <div>Deed Type: {deedDone.typeOfDeed}</div>
                 </div>
-                <div>Next Deed Date: {nextAvailableDeedDate}</div>
+                
                 
                 <div className='card'> DeedWards
                 <div>Date: {deedWards.deedWardDate}</div>
