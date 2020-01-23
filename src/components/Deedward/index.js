@@ -93,7 +93,7 @@ const DeedWard = () => {
                 <h2>Available Points: {points}</h2>
             </div>
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center reward-items-container">
                 {rewards.map((reward, index) =>
                     <div
                         className="col-sm-3 reward-card"

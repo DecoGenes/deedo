@@ -83,14 +83,14 @@ const DeedList = () => {
     }, [deedsList])
 
     return (
-        <div>
+        <div className="deedslist-container">
             <div className="deedslist-headline-container">
                 <h2 className="deedslist-headline">Available Deeds</h2>
             </div>
-            <div class="row justify-content-center">
+            <div className="row justify-content-center deeds-items-container">
                 {deedsList.map((deed, index) =>
                     <div
-                        className="col-sm-3 reward-card"
+                        className="col-sm-3 deed-card"
                         key={deed.title + index}
                         style={{
                             opacity: showDeeds ? 1 : 0,

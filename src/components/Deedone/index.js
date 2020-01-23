@@ -44,13 +44,13 @@ const DeedDone = () => {
     }, [deedsHistory])
 
     return (
-        <div>
+        <div className="history-page-container">
             <div className="deedsdone-headline-container">
                 <h2 className="deedsdone-headline">Your Deeds History</h2>
             </div>
-            <div class="row justify-content-center">
+            <div className="row justify-content-center history-items-container">
                 {deedsHistory.map((deed, index) =>
-                    <div className="col-sm-3 reward-card"
+                    <div className="col-sm-3 deed-card"
                         key={deed.title + index}
                         style={{
                             opacity: showDeeds ? 1 : 0,
