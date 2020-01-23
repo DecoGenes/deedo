@@ -1,65 +1,108 @@
 import React, { Component } from 'react'
 import '../Deedlist/style.css'
 
+const deedsList = [
+    {
+        title: "Blood Donation",
+        organization: "Magen David Adom",
+        location: "Multiple",
+        pointsToEarn: 10,
+        mapURL: "https://www.dam.org.il/en/regular-donation-station/",
+    },
+    {
+        title: "Plasma Donation",
+        organization: "Magen David Adom",
+        location: "Multiple",
+        pointsToEarn: 15,
+        mapURL: "https://www.dam.org.il/en/regular-donation-station/",
+    },
+    {
+        title: "Taking Out Dogs for a Walk",
+        organization: "Let Live",
+        location: "Ramat-Gan Dov Friedman 8",
+        pointsToEarn: 10,
+        mapURL: "http://www.letlive.org.il/eng/?cat=50"
+    },
+    {
+        title: "Giving Bone Marrow to Lital",
+        organization: "Kids in Need",
+        location: "Tel-Aviv Rotchild 64",
+        pointsToEarn: 150,
+        mapURL: "https://goo.gl/maps/CfU1FARYEp7DKjUN7"
+    },
+    {
+        title: "Fixing Homes",
+        organization: "Living together",
+        location: "Herzliya Sokolov 40",
+        pointsToEarn: 10,
+        mapURL: "https://goo.gl/maps/RFkq8jRDjSiXByim6"
+    },
+    {
+        title: "Save the Street Cats",
+        organization: "Animal SOS",
+        location: "Ramat-Gan Zabotinski 38",
+        pointsToEarn: 20,
+        mapURL: "https://goo.gl/maps/XHfPgure4gYC9eLN6"
+    },
+    {
+        title: "Private English Lessons",
+        organization: "Rabin School",
+        location: "Givatayim Arlozorov 13",
+        pointsToEarn: 10,
+        mapURL: "https://goo.gl/maps/LXgnkkn4GHoB2x159"
+    },
+    {
+        title: "Helping the Homeless",
+        organization: "TLV City Council",
+        location: "Tel-Aviv Shaked 51",
+        pointsToEarn: 15,
+        mapURL: "https://goo.gl/maps/iwzAL8fitHwRZMVj7"
+    },
+    {
+        title: "Spend Time with Elderly",
+        organization: "Age and Health",
+        location: "Kiryat Ono Hanasi 112",
+        pointsToEarn: 10,
+        mapURL: "https://goo.gl/maps/h53ZYkS9t3dPProT7"
+    },
+    {
+        title: "Cleaning the Safari",
+        organization: "Safari",
+        location: "Safari Ramat-Gan",
+        pointsToEarn: 20,
+        mapURL: "https://goo.gl/maps/x835zPGqH4KsVSxK8"
+    },
+]
+
 export class DeedList extends React.Component {
-    constructor(props){
-    super(props)
-    this.state={
-    deeds : []
+    constructor(props) {
+        super(props)
+        this.state = {
+            deeds: []
+        }
     }
-    }
+
     render() {
         return (
             <div>
-               <h1 className="deedslist-headline">Available Deeds</h1> 
-               <div className="deedlist-card">
-                   <h3><a href="" className="deedlist-deed">Taking out dogs for a walk</a></h3>
-                   <h4>Organization: Tno Lachaiot Lichyot</h4>
-                   <h4>Location: Ramat-Gan Dov Friedman 8 </h4>
-                   <p>10 points</p>
-               </div>
-               <div className="deedlist-card" >
-                   <h3><a href="" className="deedlist-deed">Giving Bone marrow to Lital</a></h3>
-                   <h4>Organization: Kids in need</h4>
-                   <h4>Location: Tel-Aviv Rotchild 64 </h4>
-                   <p>30 points</p>
-               </div>
-               <div className="deedlist-card">
-                   <h3><a href="" className="deedlist-deed">Fixing homes</a></h3>
-                   <h4>Organization: Living together</h4>
-                   <h4>Location: Herzliya Sokolov 40 </h4>
-                   <p>10 points</p>
-               </div>
-               <div className="deedlist-card" >
-                   <h3> <a href="" className="deedlist-deed">Save the street cats</a></h3>
-                   <h4>Organization: Animal sos</h4>
-                   <h4>Location: Ramat-Gan Zabotinski 38 </h4>
-                   <p>20 points</p>
-               </div>
-               <div className="deedlist-card">
-                   <h3><a href="" className="deedlist-deed">Private English lessons</a></h3>
-                   <h4>Organization: Rabin School</h4>
-                   <h4>Location: Givatayim Arlozorov 13 </h4>
-                   <p>10 points</p>
-               </div>
-               <div className="deedlist-card" >
-                   <h3><a href="" className="deedlist-deed">Helping the homeless</a></h3>
-                   <h4>Organization: TLV city council</h4>
-                   <h4>Location: Tel-Aviv Shaked 51 </h4>
-                   <p>15 points</p>
-               </div>
-               <div className="deedlist-card">
-                   <h3><a href="" className="deedlist-deed">Spend time with elderly</a></h3>
-                   <h4>Organization: Age and health</h4>
-                   <h4>Location: Kiryat Ono Hanasi 112 </h4>
-                   <p>10 points</p>
-               </div>
-               <div className="deedlist-card" >
-                   <h3> <a href="" className="deedlist-deed">Cleaning the Safari</a></h3>
-                   <h4>Organization: Safari</h4>
-                   <h4>Location: Safari Ramat-Gan </h4>
-                   <p>20 points</p>
-               </div>
+                <div className="deedslist-headline-container">
+                    <h2 className="deedslist-headline">Available Deeds</h2>
+                </div>
+                <div class="row justify-content-center">
+                    {deedsList.map(deed =>
+                        <div className="col-sm-3 reward-card">
+                            <div className="card">
+                                <div className="card-body">
+                                    <h3 className="card-title deedsdone-title">{deed.title}</h3>
+                                    <h5>Organization: {deed.organization}</h5>
+                                    <p className="card-text">Location: {deed.location}</p>
+                                    <p className="card-text deedsdone-pts-earned"><em>{deed.pointsToEarn} points to earn</em></p>
+                                    <div className="deedward-link"><a href={deed.mapURL} className="btn btn-primary" target="_blank">See location</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    )}
+                </div>
             </div>
         )
     }

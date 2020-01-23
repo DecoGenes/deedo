@@ -1,19 +1,6 @@
 body{
     text-align: center;
 }
-.deedlist-card{
-    display: inline-block;
-    border: 2px SteelBlue solid;
-    border-radius: 20px;
-    padding:15px;
-    margin:15px;
-    min-width:300px;
-}
-.deedlist-deed{
-    color: darkred;
-    text-decoration: underline;
-}
-.deedslist-headline{
-    color: darkblue;
-    margin-top:15px;
+.deedslist-headline-container{
+    margin: 2rem auto;
 }
