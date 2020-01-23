@@ -4,14 +4,10 @@ import { Container, Col, Card, ListGroup, ListGroupItem, ButtonToolbar, Button, 
 
 export default function Home() {
 
-    function test() {
-        return
-    }
-
     return (
+
         <Container className="align-items-center">
             <Row className="align-items-center">
-
                 <Card className="align-items-center" >
                     {/* <Card.Img variant="top" src={imagetest} /> */}
                     <Card.Body>
@@ -21,9 +17,9 @@ export default function Home() {
                             the card's content.
                              </Card.Text>
                     </Card.Body>
-                    <ListGroup className="list-group-flush">
+                    {/* <ListGroup className="list-group-flush">
                         <Login />
-                    </ListGroup>
+                    </ListGroup> */}
                     <Card.Body>
                         <Card.Link href="#">Sponsor</Card.Link>
                         <Card.Link href="#">Rate Us</Card.Link>
