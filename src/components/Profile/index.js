@@ -47,7 +47,7 @@ export default function Profile() {
 
     return (
         <div className='profile-page'>
-            <h1 className="profile-headline">DeedId: {deedId}</h1>
+            {/* <h1 className="profile-headline">DeedId: {deedId}</h1> */}
             <div>Next Deed Date: {nextAvailableDeedDate}</div>
             <div className='user-card'>
                 <div className='card1'>
