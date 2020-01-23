@@ -1,6 +1,6 @@
 .faq-btn{
     margin:15px;
-    margin-top:50px;
+    margin-top:30px;
 }
 .faq-headline{
     color:darkblue;
@@ -8,4 +8,16 @@
 }
 .Deedo-faq{
     display: none;
+}
+.faq-div{
+    margin-left:30%;
+    width:40%;
+    text-align: left;
+    justify-content: center;
+}
+.faq-text{
+    display: flex;
+}
+.faq-header{
+    margin-bottom: 20px;
 }
