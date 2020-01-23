@@ -149,7 +149,7 @@ export default class Login extends React.Component {
                         </div>
                     </Switch>
                 </Router>
-                <button className='signout-btn' onClick={signout}>Sign-out</button>
+                <Button variant="danger" className='signout-btn' onClick={signout}>Sign-out</Button>
             </div>
         );
     }
