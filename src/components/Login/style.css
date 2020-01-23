@@ -5,10 +5,10 @@
     
 }
 @media only screen and (max-width: 995px) {
-    .singout-btn {
+    .signout-btn {
         margin-left: -56%;
     }
-  }
+}
 
 .logo-img{
     width: 25%;
@@ -21,4 +21,8 @@
     max-width: 75%;
     margin-left: 10%;
     border-radius: 25px;
+}
+
+.firebase-style button {
+    width: 80%;
 }

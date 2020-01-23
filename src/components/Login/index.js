@@ -80,7 +80,7 @@ export default class Login extends React.Component {
                                         </Card.Body>
                                         <ListGroup className="list-group-flush">
                                             <div className='signInPage'>
-                                                <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
+                                                <StyledFirebaseAuth className="firebase-style" uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
                                             </div>
                                         </ListGroup>
                                         <Card.Body>
