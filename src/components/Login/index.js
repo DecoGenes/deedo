@@ -88,10 +88,10 @@ export default class Login extends React.Component {
                         <div className="App">
                             <NavBarMain />
                             <Route exact path="/">
-
+                            
                             </Route>
                             <Route exact path="/home">
-                                <Home />
+                            <Home />
                             </Route>
                             <Route path="/DeedList">
                                 <DeedList></DeedList>

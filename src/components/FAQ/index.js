@@ -32,36 +32,38 @@ export default class FAQ extends Component {
                 <button className='btn btn-primary faq-btn' onClick={() => this.handleBloodFaq()}>Giving blood</button>
                 <button className='btn btn-primary faq-btn' onClick={() => this.handleAnimalsFaq()}>Helping Animals</button>
                 <button className='btn btn-primary faq-btn' onClick={() => this.handleTeachingFaq()}>Teaching others</button>
-                
-                <div className="Deedo-faq" style={{display: this.state.showDeedo ? 'block' : 'none' }}>
-                    <h3>Deedo</h3>
-                    <h5>Who is Deedo....</h5>
-                    <p>bla bla bla</p>
+                <div className="faq-text">
+                <div className="Deedo-faq faq-div" style={{display: this.state.showDeedo ? 'block' : 'none' }}>
+                    <h3 className="faq-header">Deedo</h3>
+                    <h5>Who is Deedo?</h5>
+                    <p>We are all about doing good. We wanted to motivte people to do more good by giving back</p>
                     <h5>Why should I use Deedo?</h5>
-                    <p>bla bla bla</p>
+                    <p>Why not? You give to others and you get back. Deedo is friendly easy to use and mostly importantly so much fun </p>
                 </div>
-                <div className="Blood-faq" style={{display: this.state.showBlood ? 'block' : 'none' }}>
-                    <h3>Giving Blood</h3>
-                    <h5>How can i give blood?</h5>
-                    <p>bla bla bla</p>
-                    <h5>Where do I give blood?</h5>
-                    <p>bla bla bla</p>
+                <div className="Blood-faq faq-div" style={{display: this.state.showBlood ? 'block' : 'none' }}>
+                    <h3 className="faq-header">Giving Blood</h3>
+                    <h5>How can I give blood?</h5>
+                    <p>Just go to your nearest Mada station. </p>
+                    <h5>How often can I give blood?</h5>
+                    <p>Every 3 months.</p>
                 </div>
-                <div className="Animals-faq" style={{display: this.state.showAnimals ? 'block' : 'none' }}>
-                    <h3>Helping Animals</h3>
-                    <h5>Where can i help Animals?</h5>
-                    <p>bla bla bla</p>
-                    <h5>Which Animals can i help?</h5>
-                    <p>bla bla bla</p>
+                <div className="Animals-faq faq-div" style={{display: this.state.showAnimals ? 'block' : 'none' }}>
+                    <h3 className="faq-header">Helping Animals</h3>
+                    <h5>Where can I help Animals?</h5>
+                    <p>a lot of different organizations are looking for volunteers.</p> 
+                     <p>   SOS, Tzar balei Chaim and Tno Lachaiot Lichyot aare just to name a few</p>
+                    <h5>Which Animals can I help?</h5>
+                    <p>Cats and dogs are the most popular but you can also find different kind of birds, reptiles and mammals.  </p>
                 </div>
-                <div className="Teaching-faq" style={{display: this.state.showTeaching ? 'block' : 'none' }}>
-                    <h3>Teaching</h3>
+                <div className="Teaching-faq faq-div" style={{display: this.state.showTeaching ? 'block' : 'none' }}>
+                    <h3 className="faq-header">Teaching</h3>
                     <h5>What does teaching include?</h5>
-                    <p>bla bla bla</p>
+                    <p>There is a large variaty of people needing tutering. 
+                        starting from young children, teens and even adults.</p>
                     <h5>I don't have a teaching diploma. Can I help anyway?</h5>
-                    <p>bla bla bla</p>
+                    <p>Sure! As long as you feel comfortable with teaching a subject you can do it.</p>
                 </div>
-
+                </div>
             </div>
         )
     }
