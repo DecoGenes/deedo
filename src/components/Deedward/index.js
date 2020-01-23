@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState, useEffect } from 'react';
 import "../Deedward/style.css"
 
 
@@ -7,7 +7,7 @@ const rewards = [
         storeName: "Eco Store",
         location: "Ma'avar Yabok 5, Tel Aviv-Yafo",
         city: "Tel Aviv",
-        storeDescription: "Eco friendly store",
+        storeDescription: "Eco friendly store in Israel",
         cost: "min. 35 pts.",
         mapURL: "https://g.page/ecostoretlv?share",
         website: "https://www.ecostore.co.il/"
@@ -29,7 +29,7 @@ const rewards = [
         cost: "min. 50 pts.",
         mapURL: "https://www.google.com/maps/search/h%26m+israel/@32.0717697,34.7869346,17z/data=!3m1!4b1",
         website: "https://hmgroup.com/sustainability.html"
-    },    
+    },
     {
         storeName: "Bird",
         location: "Multiple",
@@ -75,14 +75,17 @@ const rewards = [
         mapURL: "https://goo.gl/maps/s17jcPxKV6UH1fDi6",
         website: "https://www.dizengof-center.co.il/en/"
     },
-    
-
-    
 ]
 
 
 const DeedWard = () => {
-    const [points, setPoints] = useState('400')
+    const [points, setPoints] = useState('400');
+    const [showRewards, setShowRewards] = useState(false);
+    useEffect(() => {
+        setTimeout(() => {
+            setShowRewards(true);
+        }, 500)
+    }, [rewards])
 
     return (
         <div className="rewards-page-container">
@@ -91,16 +94,39 @@ const DeedWard = () => {
             </div>
 
             <div class="row justify-content-center">
-                {rewards.map(reward =>
-                    <div className="col-sm-3 reward-card">
+                {rewards.map((reward, index) =>
+                    <div
+                        className="col-sm-3 reward-card"
+                        key={reward.storeName + index}
+                        style={{
+                            opacity: showRewards ? 1 : 0,
+                            transitionDelay: (index * 0.2) + 's'
+                        }}
+                    >
                         <div className="card">
                             <div className="card-body">
                                 <h5 className="card-title">{reward.storeName}</h5>
                                 <p className="card-text">{reward.storeDescription}</p>
                                 <p className="card-text reward-cost">{reward.cost}</p>
                                 <p className="reward-location"><em>{reward.location}</em></p>
-                                <div className="deedward-link"><a href={reward.mapURL} className="btn btn-primary" target="_blank">See map</a></div>
-                                <div className="deedward-link"><a href={reward.website} className="btn btn-warning" target="_blank">See website</a></div>
+                                <div className="deedward-link">
+                                    <a href={reward.mapURL}
+                                        className="btn btn-primary"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See map
+                                    </a>
+                                </div>
+                                <div className="deedward-link">
+                                    <a href={reward.website}
+                                        className="btn btn-warning"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See website
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState, useEffect } from 'react'
 import '../Deedlist/style.css'
 
 const deedsList = [
@@ -74,38 +74,55 @@ const deedsList = [
     },
 ]
 
-export class DeedList extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-            deeds: []
-        }
-    }
+const DeedList = () => {
+    const [showDeeds, setShowDeeds] = useState(false);
+    useEffect(() => {
+        setTimeout(() => {
+            setShowDeeds(true);
+        }, 500)
+    }, [deedsList])
 
-    render() {
-        return (
-            <div>
-                <div className="deedslist-headline-container">
-                    <h2 className="deedslist-headline">Available Deeds</h2>
-                </div>
-                <div class="row justify-content-center">
-                    {deedsList.map(deed =>
-                        <div className="col-sm-3 reward-card">
-                            <div className="card">
-                                <div className="card-body">
-                                    <h3 className="card-title deedsdone-title">{deed.title}</h3>
-                                    <h5>Organization: {deed.organization}</h5>
-                                    <p className="card-text">Location: {deed.location}</p>
-                                    <p className="card-text deedsdone-pts-earned"><em>{deed.pointsToEarn} points to earn</em></p>
-                                    <div className="deedward-link"><a href={deed.mapURL} className="btn btn-primary" target="_blank">See location</a></div>
+    return (
+        <div>
+            <div className="deedslist-headline-container">
+                <h2 className="deedslist-headline">Available Deeds</h2>
+            </div>
+            <div class="row justify-content-center">
+                {deedsList.map((deed, index) =>
+                    <div
+                        className="col-sm-3 reward-card"
+                        key={deed.title + index}
+                        style={{
+                            opacity: showDeeds ? 1 : 0,
+                            transitionDelay: (index * 0.2) + 's'
+                        }}
+                    >
+                        <div className="card">
+                            <div className="card-body">
+                                <h3 className="card-title deedsdone-title">{deed.title}</h3>
+                                <h5>Organization: {deed.organization}</h5>
+                                <p className="card-text">Location: {deed.location}</p>
+                                <p className="card-text deedsdone-pts-earned">
+                                    <em>{deed.pointsToEarn} points to earn</em>
+                                </p>
+                                <div className="deedward-link">
+                                    <a
+                                        href={deed.mapURL}
+                                        className="btn btn-primary"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                    >
+                                        See location
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                    )}
-                </div>
+                    </div>
+                )}
             </div>
-        )
-    }
+        </div>
+    )
 }
+// }
 
-export default DeedList
+export default DeedList;
