@@ -44,7 +44,7 @@ export default class DeedDone extends React.Component {
         return (
             <div>
                 <div className="deedsdone-headline-container">
-                <h1 className="deedsdone-headline">Your Deeds History</h1>
+                <h2 className="deedsdone-headline">Your Deeds History</h2>
                 </div>
                 <div class="row justify-content-center">
                     {deedsHistory.map(deed =>
@@ -53,8 +53,9 @@ export default class DeedDone extends React.Component {
                                 <div className="card-body">
                                     <h3 className="card-title deedsdone-title">{deed.title}</h3>
                                     <h5>Organization: {deed.organization}</h5>
-                                    <p className="card-text">{deed.date}</p>
                                     <p className="card-text deedsdone-pts-earned"><em>{deed.pointsEarned} points earned</em></p>
+                                    <p className="card-text">{deed.date}</p>
+                                    
                                 </div>
                             </div>
                         </div>
