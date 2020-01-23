@@ -23,7 +23,7 @@ const rewards = [
     },
     {
         storeName: "H&M",
-        location: "Multiple",
+        location: "Multiple locations",
         city: "Tel Aviv",
         storeDescription: "Multinational clothing retail company",
         cost: "min. 50 pts.",
@@ -32,7 +32,7 @@ const rewards = [
     },
     {
         storeName: "Bird",
-        location: "Multiple",
+        location: "Multiple locations",
         city: "Tel Aviv",
         storeDescription: "Electric scooter rental service",
         cost: "min. 20 pts.",
@@ -41,7 +41,7 @@ const rewards = [
     },
     {
         storeName: "Lime",
-        location: "Multiple",
+        location: "Multiple locations",
         city: "Tel Aviv",
         storeDescription: "Electric scooter rental service",
         cost: "min. 20 pts.",
@@ -50,7 +50,7 @@ const rewards = [
     },
     {
         storeName: "Tel-O-Fun",
-        location: "Multiple",
+        location: "Multiple locations",
         city: "Tel Aviv",
         storeDescription: "Bicycle sharing service",
         cost: "min. 20 pts.",
@@ -59,7 +59,7 @@ const rewards = [
     },
     {
         storeName: "Rebar",
-        location: "Multiple",
+        location: "Multiple locations",
         city: "Tel Aviv",
         storeDescription: "A chain offering healthy drinks",
         cost: "min. 20 pts.",

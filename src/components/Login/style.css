@@ -1,4 +1,4 @@
-.singout-btn{
+.signout-btn{
     position: absolute;
     top: 2%;
     left: 92%;
@@ -20,5 +20,5 @@
     margin-top: 10%;
     max-width: 75%;
     margin-left: 10%;
-    border-radius: 15%;
+    border-radius: 25px;
 }

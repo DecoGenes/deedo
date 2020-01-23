@@ -15,7 +15,10 @@ import Home from '../Home'
 import { Container, Col, Card, ListGroup, ListGroupItem, ButtonToolbar, Button, Row } from 'react-bootstrap';
 import logo from  './logo.jpeg'
 
-
+function signout() {
+    firebase.auth().signOut();
+    window.location='/';
+}
 
 export default class Login extends React.Component {
     state = {
@@ -128,7 +131,7 @@ export default class Login extends React.Component {
                         </div>
                     </Switch>
                 </Router>
-                <button className='singout-btn' onClick={() => firebase.auth().signOut()}>Sign-out</button>
+                <button className='signout-btn' onClick={signout}>Sign-out</button>
             </div>
         );
     }
