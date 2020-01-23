@@ -4,62 +4,80 @@ import "./style.css"
 
 const rewards = [
     {
-        storeName: "Aroma",
-        location: "Kibbutz Galuyot Rd 71, Tel Aviv-Yafo",
+        storeName: "Eco Store",
+        location: "Ma'avar Yabok 5, Tel Aviv-Yafo",
         city: "Tel Aviv",
-        storeDescription: "Israeli espresso and coffee chain",
+        storeDescription: "Eco friendly store",
+        cost: "min. 35 pts.",
+        mapURL: "https://g.page/ecostoretlv?share",
+        website: "https://www.ecostore.co.il/"
+    },
+    {
+        storeName: "Amazon",
+        location: "Derech Menachem Begin 121, Tel Aviv-Yafo",
+        city: "Tel Aviv",
+        storeDescription: "Multinational technology company which includes e-commerce",
+        cost: "min. 60 pts.",
+        mapURL: "https://goo.gl/maps/phXxp8w6JAQyokZTA",
+        website: "https://www.amazon.com/"
+    },
+    {
+        storeName: "H&M",
+        location: "Multiple",
+        city: "Tel Aviv",
+        storeDescription: "Multinational clothing retail company",
         cost: "min. 50 pts.",
-        mapURL: "https://goo.gl/maps/1tW88vrw4RUC3wAt5",
-        description: ""
-    },
+        mapURL: "https://www.google.com/maps/search/h%26m+israel/@32.0717697,34.7869346,17z/data=!3m1!4b1",
+        website: "https://www.hm.com/"
+    },    
     {
-        storeName: "Falafel Gina",
-        location: "Shoken St 22, Tel Aviv-Yafo",
+        storeName: "Bird",
+        location: "Multiple",
         city: "Tel Aviv",
-        storeDescription: "Delicious falafel restaurant",
-        cost: "min. 30 pts.",
-        mapURL: "https://goo.gl/maps/45RBg7EPSQfQDg3s6"
-    },
-    {
-        storeName: "Rupee 24",
-        location: "Shoken St 16, Tel Aviv-Yafo",
-        city: "Tel Aviv",
-        storeDescription: "Fun vegetarian Indian restaurant",
+        storeDescription: "Electric scooter rental service",
         cost: "min. 20 pts.",
-        mapURL: "https://g.page/24rupee?share"
+        mapURL: "https://www.bird.co/map/",
+        website: "https://www.bird.co/"
     },
     {
-        storeName: "Tampopo",
-        location: "Reviyat Florentin 43, Tel Aviv-Yafo",
+        storeName: "Lime",
+        location: "Multiple",
         city: "Tel Aviv",
-        storeDescription: "Serves authentic Japanese cuisine",
-        cost: "min. 40 pts.",
-        mapURL: "https://goo.gl/maps/ZjK7EeqXhC6opUK37"
+        storeDescription: "Electric scooter rental service",
+        cost: "min. 20 pts.",
+        mapURL: "https://www.li.me/locations",
+        website: "https://www.li.me/"
     },
     {
-        storeName: "Caldo",
-        location: "Derech Metsada 47, Be'er Sheva",
-        city: "Beer Sheva",
-        storeDescription: "Gourmet pizza bar",
-        cost: "min. 30 pts.",
-        mapURL: "https://goo.gl/maps/6GgYRkK6eRK7jyvd8"
+        storeName: "Tel-O-Fun",
+        location: "Multiple",
+        city: "Tel Aviv",
+        storeDescription: "Bicycle sharing service",
+        cost: "min. 20 pts.",
+        mapURL: "https://www.tel-o-fun.co.il/en/TelOFunLocations.aspx",
+        website: "https://www.tel-o-fun.co.il/en/"
     },
     {
-        storeName: "Goomba",
-        location: "Yes Planet Unit 2, Be'er Sheva",
-        city: "Beer Sheva",
-        storeDescription: "Authentic Italian restaurant",
-        cost: "min. 30 pts.",
-        mapURL: "https://goo.gl/maps/ZRkvoY2JfWioJwuW6"
+        storeName: "Rebar",
+        location: "Multiple",
+        city: "Tel Aviv",
+        storeDescription: "A chain offering healthy drinks",
+        cost: "min. 20 pts.",
+        mapURL: "https://www.rebar.co.il/branch/",
+        website: "https://www.rebar.co.il/"
     },
     {
-        storeName: "Sifriya",
-        location: "Yitshak Nafha St 25, Be'er Sheva",
-        city: "Beer Sheva",
-        storeDescription: "Awesome family restaurant",
-        cost: "min. 50 pts.",
-        mapURL: "https://goo.gl/maps/xEedyhiePqbENBdh9"
+        storeName: "Dizengof Center",
+        location: "Dizengoff St 50, Tel Aviv-Yafo",
+        city: "Tel Aviv",
+        storeDescription: "Israel's first eco-friendly shopping center",
+        cost: "min. 20 pts.",
+        mapURL: "https://goo.gl/maps/s17jcPxKV6UH1fDi6",
+        website: "https://www.dizengof-center.co.il/en/"
     },
+    
+
+    
 ]
 
 
@@ -81,7 +99,8 @@ const DeedWard = () => {
                                 <p className="card-text">{reward.storeDescription}</p>
                                 <p className="card-text reward-cost">{reward.cost}</p>
                                 <p className="reward-location"><em>{reward.location}</em></p>
-                                <a href={reward.mapURL} className="btn btn-primary" target="_blank">See map</a>
+                                <div className="deedward-link"><a href={reward.mapURL} className="btn btn-primary" target="_blank">See map</a></div>
+                                <div className="deedward-link"><a href={reward.website} className="btn btn-warning" target="_blank">See website</a></div>
                             </div>
                         </div>
                     </div>

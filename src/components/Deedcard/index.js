@@ -25,7 +25,7 @@ const DeedCard = () => {
 
                 <div className="deedcard-user info">
                     <div className="deedcard-user detail">
-                        <h2 className="deedcard-detail deedcard-header name">{userData.firstName} {userData.lastName}</h2>
+                        <h3 className="deedcard-detail deedcard-header name">{userData.firstName} {userData.lastName}</h3>
                         <p className="deedcard-detail blood">Blood Type:
                             <span className="space-info">{userData.bloodType}{userData.RhD}
                             </span>
