@@ -13,11 +13,11 @@ import NavBarMain from '../Navbar';
 import Home from '../Home'
 // import App from '../../App'
 import { Container, Col, Card, ListGroup, ListGroupItem, ButtonToolbar, Button, Row } from 'react-bootstrap';
-import logo from  './logo.jpeg'
+import logo from './logo.jpeg'
 
 function signout() {
     firebase.auth().signOut();
-    window.location='/';
+    window.location = '/';
 }
 
 export default class Login extends React.Component {
@@ -52,13 +52,13 @@ export default class Login extends React.Component {
         this.unregisterAuthObserver();
     }
 
-    componentDidUpdate(){
-        if(this.state.isSignedIn == true){
+    componentDidUpdate() {
+        if (this.state.isSignedIn == true) {
             this.renderRedirect()
         } else {
             return <Redirect to='/' />
         }
-        
+
     }
 
     render() {
@@ -67,13 +67,34 @@ export default class Login extends React.Component {
                 <Router>
                     <Switch>
                         <Route exact path='/'>
-                            <Container className="align-items-center" >
+                            <div className="log-in-container">
+                                <Card className="col-12 home-container" >
+                                    <Card.Img variant="top" className='logo-img' src={logo} />
+                                    <Card.Body>
+                                        <Card.Text>
+                                            DeeDo is a platform that provides opportunities to do good deeds
+                                            and get rewards. What are you waiting for to DeeDo?
+                                            </Card.Text>
+                                        <h1>Join Now!</h1>
+                                    </Card.Body>
+                                    <ListGroup className="list-group-flush">
+                                        <div className='signInPage'>
+                                            <StyledFirebaseAuth className="firebase-style" uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
+                                        </div>
+                                    </ListGroup>
+                                    <Card.Body>
+                                        <Card.Link href="#">Sponsor</Card.Link>
+                                        <Card.Link href="#">Rate Us</Card.Link>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            {/* <Container className="align-items-center" >
                                 <Row className="align-items-center justify-self-center">
                                     <Card className="col-12 home-container" >
-                                        <Card.Img variant="top" className='logo-img' src={logo}  />
+                                        <Card.Img variant="top" className='logo-img' src={logo} />
                                         <Card.Body>
                                             <Card.Text>
-                                                DeeDo is a platform that provides opportunities to do good deeds 
+                                                DeeDo is a platform that provides opportunities to do good deeds
                                                 and get rewards. What are you waiting for to DeeDo?
                                             </Card.Text>
                                             <h1>Join Now!</h1>
@@ -89,7 +110,7 @@ export default class Login extends React.Component {
                                         </Card.Body>
                                     </Card>
                                 </Row>
-                            </Container>
+                            </Container> */}
                         </Route>
                     </Switch>
                 </Router>
@@ -102,13 +123,13 @@ export default class Login extends React.Component {
                         <div className="App">
                             <NavBarMain />
                             <Route exact path="/">
-                            <DeedList></DeedList>
+                                <DeedList></DeedList>
                             </Route>
                             <Route exact path="/home">
-                            <Home />
+                                <Home />
                             </Route>
                             <Route path="/DeedList">
-                                
+
                             </Route>
                             <Route path="/profile">
                                 <Profile></Profile>

@@ -1,8 +1,10 @@
 .rewards-page-container {
     min-height: 50vh;
+    max-width: 100%;
 }
 .reward-card{
-    margin-bottom: 15px;
+    margin: 0 15px 15px 15px;
+    max-width: 100%;
 }
 .reward-cost {
     font-size: 0.8rem;
@@ -12,4 +14,9 @@
 }
 .deedward-link {
     margin-bottom: 5px;
+}
+.reward-items-container {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
 }

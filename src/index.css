@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient( 178deg,  rgba(156,177,248,1) 7.5%, rgba(153,247,243,1) 93.1% );
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;  
 }
 
 code {
