@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./style.css"
+import "../Deedward/style.css"
 
 
 const rewards = [
@@ -19,7 +19,7 @@ const rewards = [
         storeDescription: "Multinational technology company which includes e-commerce",
         cost: "min. 60 pts.",
         mapURL: "https://goo.gl/maps/phXxp8w6JAQyokZTA",
-        website: "https://www.amazon.com/"
+        website: "https://www.aboutamazon.com/sustainability"
     },
     {
         storeName: "H&M",
@@ -28,7 +28,7 @@ const rewards = [
         storeDescription: "Multinational clothing retail company",
         cost: "min. 50 pts.",
         mapURL: "https://www.google.com/maps/search/h%26m+israel/@32.0717697,34.7869346,17z/data=!3m1!4b1",
-        website: "https://www.hm.com/"
+        website: "https://hmgroup.com/sustainability.html"
     },    
     {
         storeName: "Bird",

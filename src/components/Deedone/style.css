@@ -1,20 +1,17 @@
 body{
     text-align: center;
 }
-.deedsdone-card{
-    display: inline-block;
-    border: 2px SteelBlue solid;
-    border-radius: 20px;
-    padding:15px;
-    margin:15px;
-    min-width:300px;
-}
+
 .deedsdone-headline{
     color: darkblue;
     margin-top:15px;
 }
-.deedsdone-date{
-    text-align: right;
-    margin-bottom: 32px;
-    margin-top: 0;
+.deedsdone-title {
+    color: #E06B0B;
+}
+.deedsdone-headline-container {
+    margin: 2rem auto;
+}
+.deedsdone-pts-earned {
+    color: #0081AF;
 }
