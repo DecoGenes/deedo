@@ -5,7 +5,7 @@ export default class FAQ extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            showDeedo:false,
+            showDeedo:true,
             showBlood:false,
             showAnimals:false,
             showTeaching:false,

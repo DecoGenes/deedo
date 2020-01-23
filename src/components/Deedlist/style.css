@@ -4,3 +4,15 @@ body{
 .deedslist-headline-container{
     margin: 2rem auto;
 }
+.deedslist-container {
+    max-width: 100%;
+}
+.deed-card {
+    max-width: 100%;
+    margin: 0 15px 15px 15px;
+}
+.deeds-items-container {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}

@@ -10,3 +10,15 @@ body{
 .deedsdone-pts-earned {
     color: #0081AF;
 }
+.history-page-container {
+    max-width: 100%;
+}
+.history-items-container {
+    max-width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+}
+.deed-card {
+    max-width: 100%;
+    margin: 0 15px 15px 15px;
+}
