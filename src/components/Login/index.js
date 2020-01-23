@@ -36,7 +36,7 @@ export default class Login extends React.Component {
 
     renderRedirect = () => {
         if (this.state.redirect) {
-            return <Redirect to='/home' />
+            return <Redirect to='/' />
         }
     }
     componentDidMount() {
@@ -47,6 +47,15 @@ export default class Login extends React.Component {
     }
     componentWillUnmount() {
         this.unregisterAuthObserver();
+    }
+
+    componentDidUpdate(){
+        if(this.state.isSignedIn == true){
+            this.renderRedirect()
+        } else {
+            return <Redirect to='/' />
+        }
+        
     }
 
     render() {
@@ -61,9 +70,10 @@ export default class Login extends React.Component {
                                         <Card.Img variant="top" className='logo-img' src={logo}  />
                                         <Card.Body>
                                             <Card.Text>
-                                                Some quick example text to build on the card title and make up the bulk of
-                                                the card's content.
+                                                DeeDo is a platform that provides opportunities to do good deeds 
+                                                and get rewards. What are you waiting for to DeeDo?
                                             </Card.Text>
+                                            <h1>Join Now!</h1>
                                         </Card.Body>
                                         <ListGroup className="list-group-flush">
                                             <div className='signInPage'>
@@ -112,10 +122,13 @@ export default class Login extends React.Component {
                             <Route path="/FAQ">
                                 <FAQ></FAQ>
                             </Route>
+                            <Route path="/FAQ">
+                                <FAQ></FAQ>
+                            </Route>
                         </div>
                     </Switch>
                 </Router>
-                <button className='singout-btn' loggedin={this.state.isSignedIn} onClick={() => firebase.auth().signOut()}>Sign-out</button>
+                <button className='singout-btn' onClick={() => firebase.auth().signOut()}>Sign-out</button>
             </div>
         );
     }
