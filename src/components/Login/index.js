@@ -105,7 +105,7 @@ export default class Login extends React.Component {
                             <Route path="/DeedCard">
                                 <Deedcard></Deedcard>
                             </Route>
-                            <Route path="/DeedWards">
+                            <Route path="/DeedWard">
                                 <DeedWard></DeedWard>
                             </Route>
                             <Route path="/FAQ">
