@@ -16,6 +16,7 @@ import { Container, Col, Card, ListGroup, ListGroupItem, ButtonToolbar, Button, 
 import logo from  './logo.jpeg'
 
 
+
 export default class Login extends React.Component {
     state = {
         isSignedIn: false,
@@ -88,13 +89,13 @@ export default class Login extends React.Component {
                         <div className="App">
                             <NavBarMain />
                             <Route exact path="/">
-                            
+                            <DeedList></DeedList>
                             </Route>
                             <Route exact path="/home">
                             <Home />
                             </Route>
                             <Route path="/DeedList">
-                                <DeedList></DeedList>
+                                
                             </Route>
                             <Route path="/profile">
                                 <Profile></Profile>
