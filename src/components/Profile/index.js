@@ -7,7 +7,7 @@ export default function Profile() {
     const [firstName, setFirstName] = useState('Andre')
     const [lastName, setLastName] = useState('Genes')
     const [birthDate, setBirthDate] = useState('17/07/1985')
-    const [deedBalance, setDeedBalance] = useState(0)
+    const [deedBalance, setDeedBalance] = useState(400)
     const [address, setAddress] = useState({
         address1: 'Lavie 8',
         address2: '',
@@ -66,7 +66,7 @@ export default function Profile() {
                 <span>Blood Type: {blood.bloodType}</span>
                     <span>RhD: {blood.RhD}</span>
                     <label>Plasma Donor:
-                <input type='checkbox' onChange={(event) => handlePlasmaDonor(event)} value={blood.plasmaDonor} />
+                <input type='checkbox' onChange={(event) => handlePlasmaDonor(event)} value={blood.plasmaDonor} checked />
                     </label>
                     <label>Organ Donor:
                 <input type='checkbox' onChange={(event) => handleOrganDonor(event)} value={organDonor} />

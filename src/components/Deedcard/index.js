@@ -4,11 +4,11 @@ import './styles.css';
 
 
 const userData = {
-    firstName: 'Lily',
-    lastName: 'Potter',
+    firstName: 'Andre',
+    lastName: 'Genes',
     deedId: 554321,
-    bloodType: 'O',
-    RhD: '-',
+    bloodType: 'AB',
+    RhD: '+',
     plasmaDonor: true,
     organDonor: false,
 }
