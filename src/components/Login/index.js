@@ -125,9 +125,6 @@ export default class Login extends React.Component {
                             <Route path="/FAQ">
                                 <FAQ></FAQ>
                             </Route>
-                            <Route path="/FAQ">
-                                <FAQ></FAQ>
-                            </Route>
                         </div>
                     </Switch>
                 </Router>
